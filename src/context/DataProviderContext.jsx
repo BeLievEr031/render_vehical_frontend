@@ -5,9 +5,9 @@ const DataProvider = createContext();
 
 function DataProviderContext({ children }) {
   const navigate = useNavigate();
-  const userUrl = `http://localhost:5000/api/v1/user`;
-  const vehicalUrl = `http://localhost:5000/api/v1/vehical`;
-  const bookingUrl = `http://localhost:5000/api/v1/booking`;
+  const userUrl = `https://vehical-backend.onrender.com/api/v1/user`;
+  const vehicalUrl = `https://vehical-backend.onrender.com/api/v1/vehical`;
+  const bookingUrl = `https://vehical-backend.onrender.com/api/v1/booking`;
   const [user, setUser] = useState();
 
   useEffect(() => {
